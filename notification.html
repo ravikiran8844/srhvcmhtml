@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICLINIQ - Notification</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="amphtml" href="index.html" >
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css"> 
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" sizes="60x60" />
+  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/customstyle.css">    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+   <script>
+ // crude way to check that the screen is at 1024x768
+ if (window.screen.width > 501) {
+   // resolution is below 10 x 7
+   window.location.reload();
+   window.location = 'https://vc.brightbridge.co/dashboard'; //for example   
+ }
+  </script>              
+</head>               
+<body>                    
+	<section class="inner-headerimg">                                                                         
+		<div class="custom-container pad-30">                                                                         
+			<div class="back-page">                                                
+				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.10296 9.99994L14.3799 16.0773L13.1627 17.2559L5.66856 9.99994L13.1627 2.74401L14.3799 3.92252L8.10296 9.99994Z" fill="#6A3E98"/>
+</svg></a>                                                                                                                                                          
+			</div>                                                                                                                                
+			<div class="main-heading">Notifications</div>                      
+		</div>                                               
+	</section>
+	<form> 
+	<section class="dashboard-mob-img notifypge">                                  
+		<div class="custom-container">                             
+			<div class="healthqueriesbox-nord">  
+				<img src="./assets/images/icons/nohealth-quries.svg">
+				<div class="norecordtxt">No Notification is found</div>
+			</div>  
+			<div class="notificationpge">
+				<div class="notificationpge-box bg-dif-clr">  
+					<div class="notificationpge-box-name">Appointment Scheduled</div>
+					<div class="notificationpge-box-subname">Your appointment is scheduled on July 15,2022- Friday at 11.30am</div>
+				</div>
+				<div class="notificationpge-box bg-dif-clr">
+					<div class="notificationpge-box-name">Lab Test</div>
+					<div class="notificationpge-box-subname">Your EEG test has to complete within 3 days</div>
+				</div>
+				<div class="notificationpge-box bg-dif-clr">
+					<div class="notificationpge-box-name">Consultation Reminder</div>
+					<div class="notificationpge-box-subname">It is to remind you that you have to schedule your next consultation within one week.</div>
+				</div>
+				<div class="notificationpge-box bg-dif-clr">
+					<div class="notificationpge-box-name">Treatment Offers</div>
+					<div class="notificationpge-box-subname">50% Discount for whole body checkup in Sri Ramakrishna Hospital </div>
+				</div>
+			</div>	
+			<div class="row">       
+			<div class="col-12">                   
+				<div class="doctor-box-btn">                            
+				<button class="doctors-view-btn width-100 load-more">View all Notifications</button>            
+				</div>                                                         
+			</div>       	                                      
+			</div> 	    
+		</div>                                    
+	</section>    
+</form>  	
+  
+</body>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>    
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>    
+  <script src="./assets/owlcarousel/owl.carousel.min.js"></script>    
+  <script src="./assets/js/custom-main.js"></script>  
+  <script>
+	$('.file-input').change(function(){
+    var curElement = $('.image');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        // get loaded data and render thumbnail.
+        curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+});
+  </script>
+
+</html>  	

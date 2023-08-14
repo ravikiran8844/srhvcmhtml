@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICLINIQ - Health Records</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="amphtml" href="index.html" >
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css"> 
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" sizes="60x60" />
+  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/customstyle.css">    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+   <script>
+ // crude way to check that the screen is at 1024x768
+ if (window.screen.width > 501) {
+   // resolution is below 10 x 7
+   window.location.reload();
+   window.location = 'https://vc.brightbridge.co/patient-dashboard'; //for example   
+ }
+  </script>              
+</head>               
+<body>                    
+	<section class="inner-headerimg">                                                                         
+		<div class="custom-container pad-30">                                                                         
+			<div class="back-page">                                                
+				<a href="/patient-dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.10296 9.99994L14.3799 16.0773L13.1627 17.2559L5.66856 9.99994L13.1627 2.74401L14.3799 3.92252L8.10296 9.99994Z" fill="#6A3E98"/>
+</svg></a>                                                                                                                                                          
+			</div>                                                                                                                                
+			<div class="main-heading">My Account</div>                      
+		</div>                                               
+	</section>
+	<section class="proflebgimg">	
+	<form> 
+	<section class="dashboard-mob-img healthqueries">                                  
+		<div class="custom-container">                             
+		      
+			<div class="row">
+				<div class="col-12"><span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+<path d="M3.875 11.375H9.375V12.75H3.875V11.375ZM3.875 7.9375H12.125V9.3125H3.875V7.9375ZM3.875 14.8125H7.3125V16.1875H3.875V14.8125Z" fill="black"></path>
+<path d="M14.1875 2.4375H12.125V1.75C12.125 1.38533 11.9801 1.03559 11.7223 0.777728C11.4644 0.519866 11.1147 0.375 10.75 0.375H5.25C4.88533 0.375 4.53559 0.519866 4.27773 0.777728C4.01987 1.03559 3.875 1.38533 3.875 1.75V2.4375H1.8125C1.44783 2.4375 1.09809 2.58237 0.840228 2.84023C0.582366 3.09809 0.4375 3.44783 0.4375 3.8125V18.25C0.4375 18.6147 0.582366 18.9644 0.840228 19.2223C1.09809 19.4801 1.44783 19.625 1.8125 19.625H14.1875C14.5522 19.625 14.9019 19.4801 15.1598 19.2223C15.4176 18.9644 15.5625 18.6147 15.5625 18.25V3.8125C15.5625 3.44783 15.4176 3.09809 15.1598 2.84023C14.9019 2.58237 14.5522 2.4375 14.1875 2.4375ZM5.25 1.75H10.75V4.5H5.25V1.75ZM14.1875 18.25H1.8125V3.8125H3.875V5.875H12.125V3.8125H14.1875V18.25Z" fill="black"></path>
+</svg>
+				</span><span class="p-3 innerfmlymember">Health Records</span></div>
+			</div>
+			<div class="row mt-1">
+				<div class="col-6 p-0">
+				<select class="form-select patnme-sel" id="patnme" name="patnme">
+				  <option>Saravanan</option>
+				  <option>Priya</option>
+				  <option>Ram</option>							  
+				</select>
+				</div>
+			</div>
+			<div class="healthqueriesbox-nord">  
+				<img src="./assets/images/icons/nohealth-quries.svg">
+				<div class="norecordtxt">No queries is found , Start your health query</div>
+			</div>
+			<div>
+			<div class="hlth-record">
+				<div class="accordion accordion-flush " id="accordionFlushExample">
+					  <div class="accordion-item lodrca">
+						<h2 class="accordion-header" id="flush-headingOne">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							Clinical Documents
+						  </button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+						  <div class="accordion-body">
+							<div class="healthqueriesbox-nord-born">  
+								<img src="./assets/images/icons/nohealth-quries.svg">
+								<div class="norecordtxt">No queries is found , Start your health query</div>
+							</div>
+							<div class="records-box">
+								<div class="row records-box-separate">
+									<div class="col-8 d-a-d-p">
+										<div class="pdfnme"><span class="bullet-circle"><img src="./assets/images/icons/bullet-circle.svg"></span>
+										Clinical Report_15MAR22_SRH_ICLINIQ.pdf
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="doctor-box-btn">
+										<a class="doctors-view-btn1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M14.6254 16.5539H12.8887V10.875C12.8887 10.7719 12.8043 10.6875 12.7012 10.6875H11.2949C11.1918 10.6875 11.1074 10.7719 11.1074 10.875V16.5539H9.37538C9.21835 16.5539 9.13163 16.7344 9.22772 16.8563L11.8527 20.1773C11.8703 20.1998 11.8927 20.2179 11.9183 20.2303C11.9438 20.2428 11.9719 20.2493 12.0004 20.2493C12.0288 20.2493 12.0569 20.2428 12.0825 20.2303C12.1081 20.2179 12.1305 20.1998 12.148 20.1773L14.773 16.8563C14.8691 16.7344 14.7824 16.5539 14.6254 16.5539Z" fill="#000"/>
+<path d="M19.0172 8.59453C17.9438 5.76328 15.2086 3.75 12.0047 3.75C8.80078 3.75 6.06563 5.76094 4.99219 8.59219C2.98359 9.11953 1.5 10.95 1.5 13.125C1.5 15.7148 3.59766 17.8125 6.18516 17.8125H7.125C7.22813 17.8125 7.3125 17.7281 7.3125 17.625V16.2188C7.3125 16.1156 7.22813 16.0312 7.125 16.0312H6.18516C5.39531 16.0312 4.65234 15.7172 4.09922 15.1477C3.54844 14.5805 3.25547 13.8164 3.28125 13.0242C3.30234 12.4055 3.51328 11.8242 3.89531 11.3344C4.28672 10.8352 4.83516 10.4719 5.44453 10.3102L6.33281 10.0781L6.65859 9.22031C6.86016 8.68594 7.14141 8.18672 7.49531 7.73438C7.8447 7.28603 8.25857 6.89191 8.72344 6.56484C9.68672 5.8875 10.8211 5.52891 12.0047 5.52891C13.1883 5.52891 14.3227 5.8875 15.2859 6.56484C15.7523 6.89297 16.1648 7.28672 16.5141 7.73438C16.868 8.18672 17.1492 8.68828 17.3508 9.22031L17.6742 10.0758L18.5602 10.3102C19.8305 10.6523 20.7188 11.8078 20.7188 13.125C20.7188 13.9008 20.4164 14.632 19.868 15.1805C19.599 15.451 19.2791 15.6655 18.9266 15.8115C18.5742 15.9576 18.1963 16.0323 17.8148 16.0312H16.875C16.7719 16.0312 16.6875 16.1156 16.6875 16.2188V17.625C16.6875 17.7281 16.7719 17.8125 16.875 17.8125H17.8148C20.4023 17.8125 22.5 15.7148 22.5 13.125C22.5 10.9523 21.0211 9.12422 19.0172 8.59453Z" fill="#000"/>
+</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="row records-box-separate">
+									<div class="col-8 d-a-d-p">
+										<div class="pdfnme"><span class="bullet-circle"><img src="./assets/images/icons/bullet-circle.svg"></span>
+										Clinical Report_15MAR22_SRH_ICLINIQ.pdf
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="doctor-box-btn">
+										<a class="doctors-view-btn1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M14.6254 16.5539H12.8887V10.875C12.8887 10.7719 12.8043 10.6875 12.7012 10.6875H11.2949C11.1918 10.6875 11.1074 10.7719 11.1074 10.875V16.5539H9.37538C9.21835 16.5539 9.13163 16.7344 9.22772 16.8563L11.8527 20.1773C11.8703 20.1998 11.8927 20.2179 11.9183 20.2303C11.9438 20.2428 11.9719 20.2493 12.0004 20.2493C12.0288 20.2493 12.0569 20.2428 12.0825 20.2303C12.1081 20.2179 12.1305 20.1998 12.148 20.1773L14.773 16.8563C14.8691 16.7344 14.7824 16.5539 14.6254 16.5539Z" fill="#000"/>
+<path d="M19.0172 8.59453C17.9438 5.76328 15.2086 3.75 12.0047 3.75C8.80078 3.75 6.06563 5.76094 4.99219 8.59219C2.98359 9.11953 1.5 10.95 1.5 13.125C1.5 15.7148 3.59766 17.8125 6.18516 17.8125H7.125C7.22813 17.8125 7.3125 17.7281 7.3125 17.625V16.2188C7.3125 16.1156 7.22813 16.0312 7.125 16.0312H6.18516C5.39531 16.0312 4.65234 15.7172 4.09922 15.1477C3.54844 14.5805 3.25547 13.8164 3.28125 13.0242C3.30234 12.4055 3.51328 11.8242 3.89531 11.3344C4.28672 10.8352 4.83516 10.4719 5.44453 10.3102L6.33281 10.0781L6.65859 9.22031C6.86016 8.68594 7.14141 8.18672 7.49531 7.73438C7.8447 7.28603 8.25857 6.89191 8.72344 6.56484C9.68672 5.8875 10.8211 5.52891 12.0047 5.52891C13.1883 5.52891 14.3227 5.8875 15.2859 6.56484C15.7523 6.89297 16.1648 7.28672 16.5141 7.73438C16.868 8.18672 17.1492 8.68828 17.3508 9.22031L17.6742 10.0758L18.5602 10.3102C19.8305 10.6523 20.7188 11.8078 20.7188 13.125C20.7188 13.9008 20.4164 14.632 19.868 15.1805C19.599 15.451 19.2791 15.6655 18.9266 15.8115C18.5742 15.9576 18.1963 16.0323 17.8148 16.0312H16.875C16.7719 16.0312 16.6875 16.1156 16.6875 16.2188V17.625C16.6875 17.7281 16.7719 17.8125 16.875 17.8125H17.8148C20.4023 17.8125 22.5 15.7148 22.5 13.125C22.5 10.9523 21.0211 9.12422 19.0172 8.59453Z" fill="#000"/>
+</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="row">       
+									<div class="col-12">                   
+										<div class="add-a-report-btn">                            
+										<button class="add-a-report width-100">Add a Report</button>           
+										</div>                                                        
+									</div>    	                                      
+								</div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="accordion-item lodrca">
+						<h2 class="accordion-header" id="flush-headingTwo">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							Test Reports
+						  </button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+						  <div class="accordion-body">
+							<div class="healthqueriesbox-nord-born">  
+								<img src="./assets/images/icons/nohealth-quries.svg">
+								<div class="norecordtxt">No queries is found , Start your health query</div>
+							</div>
+							<div class="records-box">
+								<div class="row records-box-separate">
+									<div class="col-8 d-a-d-p">
+										<div class="pdfnme"><span class="bullet-circle"><img src="./assets/images/icons/bullet-circle.svg"></span>
+										Clinical Report_15MAR22_SRH_ICLINIQ.pdf
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="doctor-box-btn">
+										<a class="doctors-view-btn1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M14.6254 16.5539H12.8887V10.875C12.8887 10.7719 12.8043 10.6875 12.7012 10.6875H11.2949C11.1918 10.6875 11.1074 10.7719 11.1074 10.875V16.5539H9.37538C9.21835 16.5539 9.13163 16.7344 9.22772 16.8563L11.8527 20.1773C11.8703 20.1998 11.8927 20.2179 11.9183 20.2303C11.9438 20.2428 11.9719 20.2493 12.0004 20.2493C12.0288 20.2493 12.0569 20.2428 12.0825 20.2303C12.1081 20.2179 12.1305 20.1998 12.148 20.1773L14.773 16.8563C14.8691 16.7344 14.7824 16.5539 14.6254 16.5539Z" fill="#000"/>
+<path d="M19.0172 8.59453C17.9438 5.76328 15.2086 3.75 12.0047 3.75C8.80078 3.75 6.06563 5.76094 4.99219 8.59219C2.98359 9.11953 1.5 10.95 1.5 13.125C1.5 15.7148 3.59766 17.8125 6.18516 17.8125H7.125C7.22813 17.8125 7.3125 17.7281 7.3125 17.625V16.2188C7.3125 16.1156 7.22813 16.0312 7.125 16.0312H6.18516C5.39531 16.0312 4.65234 15.7172 4.09922 15.1477C3.54844 14.5805 3.25547 13.8164 3.28125 13.0242C3.30234 12.4055 3.51328 11.8242 3.89531 11.3344C4.28672 10.8352 4.83516 10.4719 5.44453 10.3102L6.33281 10.0781L6.65859 9.22031C6.86016 8.68594 7.14141 8.18672 7.49531 7.73438C7.8447 7.28603 8.25857 6.89191 8.72344 6.56484C9.68672 5.8875 10.8211 5.52891 12.0047 5.52891C13.1883 5.52891 14.3227 5.8875 15.2859 6.56484C15.7523 6.89297 16.1648 7.28672 16.5141 7.73438C16.868 8.18672 17.1492 8.68828 17.3508 9.22031L17.6742 10.0758L18.5602 10.3102C19.8305 10.6523 20.7188 11.8078 20.7188 13.125C20.7188 13.9008 20.4164 14.632 19.868 15.1805C19.599 15.451 19.2791 15.6655 18.9266 15.8115C18.5742 15.9576 18.1963 16.0323 17.8148 16.0312H16.875C16.7719 16.0312 16.6875 16.1156 16.6875 16.2188V17.625C16.6875 17.7281 16.7719 17.8125 16.875 17.8125H17.8148C20.4023 17.8125 22.5 15.7148 22.5 13.125C22.5 10.9523 21.0211 9.12422 19.0172 8.59453Z" fill="#000"/>
+</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="row records-box-separate">
+									<div class="col-8 d-a-d-p">
+										<div class="pdfnme"><span class="bullet-circle"><img src="./assets/images/icons/bullet-circle.svg"></span>
+										Clinical Report_15MAR22_SRH_ICLINIQ.pdf
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="doctor-box-btn">
+										<a class="doctors-view-btn1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M14.6254 16.5539H12.8887V10.875C12.8887 10.7719 12.8043 10.6875 12.7012 10.6875H11.2949C11.1918 10.6875 11.1074 10.7719 11.1074 10.875V16.5539H9.37538C9.21835 16.5539 9.13163 16.7344 9.22772 16.8563L11.8527 20.1773C11.8703 20.1998 11.8927 20.2179 11.9183 20.2303C11.9438 20.2428 11.9719 20.2493 12.0004 20.2493C12.0288 20.2493 12.0569 20.2428 12.0825 20.2303C12.1081 20.2179 12.1305 20.1998 12.148 20.1773L14.773 16.8563C14.8691 16.7344 14.7824 16.5539 14.6254 16.5539Z" fill="#000"/>
+<path d="M19.0172 8.59453C17.9438 5.76328 15.2086 3.75 12.0047 3.75C8.80078 3.75 6.06563 5.76094 4.99219 8.59219C2.98359 9.11953 1.5 10.95 1.5 13.125C1.5 15.7148 3.59766 17.8125 6.18516 17.8125H7.125C7.22813 17.8125 7.3125 17.7281 7.3125 17.625V16.2188C7.3125 16.1156 7.22813 16.0312 7.125 16.0312H6.18516C5.39531 16.0312 4.65234 15.7172 4.09922 15.1477C3.54844 14.5805 3.25547 13.8164 3.28125 13.0242C3.30234 12.4055 3.51328 11.8242 3.89531 11.3344C4.28672 10.8352 4.83516 10.4719 5.44453 10.3102L6.33281 10.0781L6.65859 9.22031C6.86016 8.68594 7.14141 8.18672 7.49531 7.73438C7.8447 7.28603 8.25857 6.89191 8.72344 6.56484C9.68672 5.8875 10.8211 5.52891 12.0047 5.52891C13.1883 5.52891 14.3227 5.8875 15.2859 6.56484C15.7523 6.89297 16.1648 7.28672 16.5141 7.73438C16.868 8.18672 17.1492 8.68828 17.3508 9.22031L17.6742 10.0758L18.5602 10.3102C19.8305 10.6523 20.7188 11.8078 20.7188 13.125C20.7188 13.9008 20.4164 14.632 19.868 15.1805C19.599 15.451 19.2791 15.6655 18.9266 15.8115C18.5742 15.9576 18.1963 16.0323 17.8148 16.0312H16.875C16.7719 16.0312 16.6875 16.1156 16.6875 16.2188V17.625C16.6875 17.7281 16.7719 17.8125 16.875 17.8125H17.8148C20.4023 17.8125 22.5 15.7148 22.5 13.125C22.5 10.9523 21.0211 9.12422 19.0172 8.59453Z" fill="#000"/>
+</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="row">       
+									<div class="col-12">                   
+										<div class="add-a-report-btn">                            
+										<button class="add-a-report width-100">Add a Report</button>           
+										</div>                                                        
+									</div>    	                                      
+								</div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="accordion-item lodrca">
+						<h2 class="accordion-header" id="flush-headingThree">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+							Vaccination Reports
+						  </button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+						  <div class="accordion-body">
+							<div class="healthqueriesbox-nord-born">  
+								<img src="./assets/images/icons/nohealth-quries.svg">
+								<div class="norecordtxt">No queries is found , Start your health query</div>
+							</div>
+							<div class="records-box">
+								<div class="row records-box-separate">
+									<div class="col-8 d-a-d-p">
+										<div class="pdfnme"><span class="bullet-circle"><img src="./assets/images/icons/bullet-circle.svg"></span>
+										Clinical Report_15MAR22_SRH_ICLINIQ.pdf
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="doctor-box-btn">
+										<a class="doctors-view-btn1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M14.6254 16.5539H12.8887V10.875C12.8887 10.7719 12.8043 10.6875 12.7012 10.6875H11.2949C11.1918 10.6875 11.1074 10.7719 11.1074 10.875V16.5539H9.37538C9.21835 16.5539 9.13163 16.7344 9.22772 16.8563L11.8527 20.1773C11.8703 20.1998 11.8927 20.2179 11.9183 20.2303C11.9438 20.2428 11.9719 20.2493 12.0004 20.2493C12.0288 20.2493 12.0569 20.2428 12.0825 20.2303C12.1081 20.2179 12.1305 20.1998 12.148 20.1773L14.773 16.8563C14.8691 16.7344 14.7824 16.5539 14.6254 16.5539Z" fill="#000"/>
+<path d="M19.0172 8.59453C17.9438 5.76328 15.2086 3.75 12.0047 3.75C8.80078 3.75 6.06563 5.76094 4.99219 8.59219C2.98359 9.11953 1.5 10.95 1.5 13.125C1.5 15.7148 3.59766 17.8125 6.18516 17.8125H7.125C7.22813 17.8125 7.3125 17.7281 7.3125 17.625V16.2188C7.3125 16.1156 7.22813 16.0312 7.125 16.0312H6.18516C5.39531 16.0312 4.65234 15.7172 4.09922 15.1477C3.54844 14.5805 3.25547 13.8164 3.28125 13.0242C3.30234 12.4055 3.51328 11.8242 3.89531 11.3344C4.28672 10.8352 4.83516 10.4719 5.44453 10.3102L6.33281 10.0781L6.65859 9.22031C6.86016 8.68594 7.14141 8.18672 7.49531 7.73438C7.8447 7.28603 8.25857 6.89191 8.72344 6.56484C9.68672 5.8875 10.8211 5.52891 12.0047 5.52891C13.1883 5.52891 14.3227 5.8875 15.2859 6.56484C15.7523 6.89297 16.1648 7.28672 16.5141 7.73438C16.868 8.18672 17.1492 8.68828 17.3508 9.22031L17.6742 10.0758L18.5602 10.3102C19.8305 10.6523 20.7188 11.8078 20.7188 13.125C20.7188 13.9008 20.4164 14.632 19.868 15.1805C19.599 15.451 19.2791 15.6655 18.9266 15.8115C18.5742 15.9576 18.1963 16.0323 17.8148 16.0312H16.875C16.7719 16.0312 16.6875 16.1156 16.6875 16.2188V17.625C16.6875 17.7281 16.7719 17.8125 16.875 17.8125H17.8148C20.4023 17.8125 22.5 15.7148 22.5 13.125C22.5 10.9523 21.0211 9.12422 19.0172 8.59453Z" fill="#000"/>
+</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="row records-box-separate">
+									<div class="col-8 d-a-d-p">
+										<div class="pdfnme"><span class="bullet-circle"><img src="./assets/images/icons/bullet-circle.svg"></span>
+										Clinical Report_15MAR22_SRH_ICLINIQ.pdf
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="doctor-box-btn">
+										<a class="doctors-view-btn1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M14.6254 16.5539H12.8887V10.875C12.8887 10.7719 12.8043 10.6875 12.7012 10.6875H11.2949C11.1918 10.6875 11.1074 10.7719 11.1074 10.875V16.5539H9.37538C9.21835 16.5539 9.13163 16.7344 9.22772 16.8563L11.8527 20.1773C11.8703 20.1998 11.8927 20.2179 11.9183 20.2303C11.9438 20.2428 11.9719 20.2493 12.0004 20.2493C12.0288 20.2493 12.0569 20.2428 12.0825 20.2303C12.1081 20.2179 12.1305 20.1998 12.148 20.1773L14.773 16.8563C14.8691 16.7344 14.7824 16.5539 14.6254 16.5539Z" fill="#000"/>
+<path d="M19.0172 8.59453C17.9438 5.76328 15.2086 3.75 12.0047 3.75C8.80078 3.75 6.06563 5.76094 4.99219 8.59219C2.98359 9.11953 1.5 10.95 1.5 13.125C1.5 15.7148 3.59766 17.8125 6.18516 17.8125H7.125C7.22813 17.8125 7.3125 17.7281 7.3125 17.625V16.2188C7.3125 16.1156 7.22813 16.0312 7.125 16.0312H6.18516C5.39531 16.0312 4.65234 15.7172 4.09922 15.1477C3.54844 14.5805 3.25547 13.8164 3.28125 13.0242C3.30234 12.4055 3.51328 11.8242 3.89531 11.3344C4.28672 10.8352 4.83516 10.4719 5.44453 10.3102L6.33281 10.0781L6.65859 9.22031C6.86016 8.68594 7.14141 8.18672 7.49531 7.73438C7.8447 7.28603 8.25857 6.89191 8.72344 6.56484C9.68672 5.8875 10.8211 5.52891 12.0047 5.52891C13.1883 5.52891 14.3227 5.8875 15.2859 6.56484C15.7523 6.89297 16.1648 7.28672 16.5141 7.73438C16.868 8.18672 17.1492 8.68828 17.3508 9.22031L17.6742 10.0758L18.5602 10.3102C19.8305 10.6523 20.7188 11.8078 20.7188 13.125C20.7188 13.9008 20.4164 14.632 19.868 15.1805C19.599 15.451 19.2791 15.6655 18.9266 15.8115C18.5742 15.9576 18.1963 16.0323 17.8148 16.0312H16.875C16.7719 16.0312 16.6875 16.1156 16.6875 16.2188V17.625C16.6875 17.7281 16.7719 17.8125 16.875 17.8125H17.8148C20.4023 17.8125 22.5 15.7148 22.5 13.125C22.5 10.9523 21.0211 9.12422 19.0172 8.59453Z" fill="#000"/>
+</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="row">       
+									<div class="col-12">                   
+										<div class="add-a-report-btn">                            
+										<button class="add-a-report width-100">Add a Report</button>           
+										</div>                                                        
+									</div>    	                                      
+								</div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  
+				</div>				
+			</div>
+         
+			</div>         
+		</div>                                
+	</section> 
+	<div class="custom-container mt-5">    
+	<div class="row">       
+		<div class="col-12">                   
+			<div class="doctor-box-btn">                            
+			<button class="doctors-view-btn width-100 load-moreca">View all Reports</button>           
+			</div>                                                        
+		</div>    	                                      
+	</div>     
+	</div>	   
+</form>  	
+
+	<section>    
+</body>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>    
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>    
+  <script src="./assets/owlcarousel/owl.carousel.min.js"></script>    
+  <script src="./assets/js/custom-main.js"></script>  
+  <script>
+	$('.file-input').change(function(){
+    var curElement = $('.image');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        // get loaded data and render thumbnail.
+        curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+});
+  </script>
+
+</html>  	

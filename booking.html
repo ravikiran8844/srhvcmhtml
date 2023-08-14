@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICLINIQ - My Bookings</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="amphtml" href="index.html" >
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css"> 
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" sizes="60x60" />
+  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/customstyle.css">    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+   <script>
+ // crude way to check that the screen is at 1024x768
+ if (window.screen.width > 501) {
+   // resolution is below 10 x 7
+   window.location.reload();
+   window.location = 'https://vc.brightbridge.co/dashboard'; //for example   
+ }
+  </script>              
+</head>               
+<body>                    
+	<section class="inner-headerimg">                                                                         
+		<div class="custom-container pad-30">                                                                         
+			<div class="back-page">                                                
+				<a href="/dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.10296 9.99994L14.3799 16.0773L13.1627 17.2559L5.66856 9.99994L13.1627 2.74401L14.3799 3.92252L8.10296 9.99994Z" fill="#6A3E98"/>
+</svg></a>                                                                                                                                                          
+			</div>                                                                                                                                
+			<div class="main-heading">My Account</div>                      
+		</div>                                               
+	</section>
+	<section class="proflebgimg">	
+	<form> 
+	<section class="dashboard-mob-img healthqueries">                                  
+		<div class="custom-container">                             
+		      
+			<div class="row">
+				<div class="col-12"><span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+<path d="M3.875 11.375H9.375V12.75H3.875V11.375ZM3.875 7.9375H12.125V9.3125H3.875V7.9375ZM3.875 14.8125H7.3125V16.1875H3.875V14.8125Z" fill="black"></path>
+<path d="M14.1875 2.4375H12.125V1.75C12.125 1.38533 11.9801 1.03559 11.7223 0.777728C11.4644 0.519866 11.1147 0.375 10.75 0.375H5.25C4.88533 0.375 4.53559 0.519866 4.27773 0.777728C4.01987 1.03559 3.875 1.38533 3.875 1.75V2.4375H1.8125C1.44783 2.4375 1.09809 2.58237 0.840228 2.84023C0.582366 3.09809 0.4375 3.44783 0.4375 3.8125V18.25C0.4375 18.6147 0.582366 18.9644 0.840228 19.2223C1.09809 19.4801 1.44783 19.625 1.8125 19.625H14.1875C14.5522 19.625 14.9019 19.4801 15.1598 19.2223C15.4176 18.9644 15.5625 18.6147 15.5625 18.25V3.8125C15.5625 3.44783 15.4176 3.09809 15.1598 2.84023C14.9019 2.58237 14.5522 2.4375 14.1875 2.4375ZM5.25 1.75H10.75V4.5H5.25V1.75ZM14.1875 18.25H1.8125V3.8125H3.875V5.875H12.125V3.8125H14.1875V18.25Z" fill="black"></path>
+</svg>
+				</span><span class="p-3 innerfmlymember">My Bookings</span></div>
+			</div>
+			<div class="row mt-1">
+				<div class="col-6 p-0">
+				<select class="form-select patnme-sel" id="patnme" name="patnme">
+				  <option>Saravanan</option>
+				  <option>Priya</option>
+				  <option>Ram</option>							  
+				</select>
+				</div>
+			</div>
+			
+							<div class="bookingtabs-ucc">
+								<ul class="nav nav-tabs" id="myuccTab" role="tablist">
+								  <li class="nav-item" role="presentation">
+									<button class="nav-link active" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming" type="button" role="tab" aria-controls="upcoming" aria-selected="true">Upcoming</button>
+								  </li>
+								  <li class="nav-item" role="presentation">
+									<button class="nav-link" id="complete-tab" data-bs-toggle="tab" data-bs-target="#complete" type="button" role="tab" aria-controls="complete" aria-selected="false">Complete</button>
+								  </li>
+								  <li class="nav-item" role="presentation">
+									<button class="nav-link" id="cancel-tab" data-bs-toggle="tab" data-bs-target="#cancel" type="button" role="tab" aria-controls="cancel" aria-selected="false">Cancel</button>
+								  </li>
+								</ul>
+								<div class="tab-content" id="myuccTabContent">
+								<div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcoming-tab">
+										<div class="healthqueriesbox-nord">
+											<img src="./assets/images/icons/no-bookings.svg">
+											<div class="norecordtxt">You have no consultation history</div>
+										</div>
+									<div class="mob-consultation lodrco">
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>
+									<div class="mob-consultation lodrco">
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>
+									<div class="mob-consultation lodrco">
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>
+									<div class="row">    
+										<div class="col-12">                
+											<div class="doctor-box-btn">                         
+											<button class="doctors-view-btn width-100 load-moreco">View all Bookings</button>         
+											</div>                                                    
+										</div>    	                                   
+									</div>	
+								</div>
+								   
+								<div class="tab-pane fade" id="complete" role="tabpanel" aria-labelledby="complete-tab">
+									<div class="healthqueriesbox-nord">
+										<img src="./assets/images/icons/no-bookings.svg">
+										<div class="norecordtxt">You have no consultation history</div>
+									</div>
+									<div class="mob-consultation lodru">
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+													<div class="doctor-box-btn"><button class="doctors-view-btn r-complete">Complete</button></div>  													
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>	
+									<div class="mob-consultation lodru">
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+													<div class="doctor-box-btn"><button class="doctors-view-btn r-complete">Complete</button></div>  													
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>	 
+									<div class="mob-consultation lodru">  
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+													<div class="doctor-box-btn"><button class="doctors-view-btn r-complete">Complete</button></div>  													
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>	
+									<div class="row">    
+										<div class="col-12">                
+											<div class="doctor-box-btn">                         
+											<button class="doctors-view-btn width-100 load-moreu">View all Bookings</button>         
+											</div>                                                    
+										</div>    	                                   
+									</div>
+								</div>
+								<div class="tab-pane fade" id="cancel" role="tabpanel" aria-labelledby="cancel-tab">
+									<div class="healthqueriesbox-nord">
+										<img src="./assets/images/icons/no-bookings.svg">
+										<div class="norecordtxt">You have no consultation history</div> 
+									</div>
+									<div class="mob-consultation lodr">
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+													<div class="doctor-box-btn"><button class="doctors-view-btn r-cancelled">Cancelled</button></div>  													
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>	
+									<div class="mob-consultation lodr">
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+													<div class="doctor-box-btn"><button class="doctors-view-btn r-cancelled">Cancelled</button></div>  													
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>	
+									<div class="mob-consultation lodr">
+										<div class="mob-consultation-box">
+										<div class="row">
+											<div class="col-4 d-a-d-p">
+												<div class="doc-img">
+													<img src="./assets/images/doctors/Dr. Anand Bharathan.png">
+												</div>
+											</div>
+											<div class="col-8 d-a-d-p">
+												<div class="doc-det-con">
+													<div class="doc-det-con-nme">Dr. Anand Bharathan</div>
+													<div class="doc-det-con-deg">M.S., DNB.,SURGICAL GASTROENTEROLOGY</div>
+													<div class="doc-det-con-spe">Surgical Gastroenterologist</div>
+													<div class="fot-dte"><img src="./assets/images/icons/calender.svg"> 15 September 2022</div>
+													<div class="fot-tme"><img src="./assets/images/icons/time-clk.svg"> 11.00 AM to 12.00 PM</div>
+													<div class="doctor-box-btn"><button class="doctors-view-btn r-cancelled">Cancelled</button></div>  													
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="mob-consult-fot">
+											<div class="row">
+												<div class="col-6">
+													<div class="fot-lft">
+														<a data-bs-toggle="modal" data-bs-target="#askAquery"><div class="cov"><img src="./assets/images/icons/envelopeicn.svg"> Ask a query</div></a>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="fot-rgt">
+														<a href="/consult-on-video.html"><div class="cov"><img src="./assets/images/icons/Videoicn.svg"> Consult on Video</div></a>
+													</div>
+												</div>
+											</div>
+										</div> 				
+									</div>
+									<div class="row">    
+										<div class="col-12">                
+											<div class="doctor-box-btn">                         
+											<button class="doctors-view-btn width-100 load-moreq">View all Bookings</button>         
+											</div>                                                    
+										</div>    	                                   
+									</div>	
+								</div>
+								</div>
+							</div>
+		</div>                           
+	</section> 	
+</form>  	
+
+	<section>
+	 <!-- The Modal -->
+<div class="modal" id="askAquery">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">    
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Ask a query  ( Rs.380 )</h4>              
+        <a class="btn-close" data-bs-dismiss="modal"></a>          
+      </div> 
+
+      <!-- Modal body -->
+      <div class="modal-body">
+	  <form>
+		<div class="main-heading">Ask a Doctor Online</div>
+		<div class="modal-body-inner">							
+		<textarea class="form-control card-effect" rows="5" id="comment" name="text" 
+		placeholder="Elaborate your health query with symptoms, current medication, gender, age, height and weight"></textarea>			
+		</div>
+		<div class="col-lg-12 col-md-12">                
+		<div class="sub-con-btn">             
+			<button class="doctors-view-btn">SUBMIT</button>	           								
+		</div>	              
+		</div>	   
+	  </form>		 
+      </div>
+
+    </div>
+  </div>
+</div>	 
+<!--end popup -->
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+  <script src="./assets/js/bootstrap.bundle.min.js"></script> 
+  <script src="./assets/owlcarousel/owl.carousel.min.js"></script> 
+  <script src="./assets/js/custom-main.js"></script> 
+  <script>
+	$('.file-input').change(function(){
+    var curElement = $('.image');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        // get loaded data and render thumbnail.
+        curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+});
+  </script>
+
+</html>  	
